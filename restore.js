@@ -25,8 +25,8 @@ function copyDependencies() {
 	shelljs.mkdir('-p', target);
 	shelljs.cp('-Rf', src, target);
 
-	var smartclient = path.join(projectDir, 'build', 'osx', 'bin', 'smartclient', 'smartclient'),
-        var appserver = path.join(projectDir, 'build', 'osx', 'bin', 'appserver', 'appserver'),
+	var smartclient = path.join(projectDir, 'build', 'osx', 'bin', 'smartclient', 'smartclient');
+        var appserver = path.join(projectDir, 'build', 'osx', 'bin', 'appserver', 'appserver');
 
         shelljs.chmod("+x",smartclient);
         shelljs.chmod("+x",appserver);
