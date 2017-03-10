@@ -1,0 +1,23 @@
+{
+  "name": "cloudbridge-kit-osx",
+  "version": "0.0.0",
+  "description": "A tool for creating and developing CloudBridge OSx apps.",
+  "homepage": "http://www.totvs.com/",
+  "keywords": [
+    "cloudbridge",
+    "mobile",
+    "app",
+    "hybrid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/totvstec/cloudbridge-kit-osx.git"
+  },
+  "contributors": [
+    {
+      "name": "Acacio Egas",
+      "email": "acacio.egas@totvs.com.br"
+    }
+  ],
+  "license": "MIT"
+}
