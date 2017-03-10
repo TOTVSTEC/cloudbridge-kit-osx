@@ -19,5 +19,19 @@
       "email": "acacio.egas@totvs.com.br"
     }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "totvstec-tools": "^1.0.1"
+  
+  },
+  
+ "scripts": {
+
+    "release": "totvstec release --npm-publish",
+
+    "release:minor": "totvstec release minor --npm-publish",
+
+    "release:major": "totvstec release major --npm-publish"
+
+  }
 }
