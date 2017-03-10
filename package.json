@@ -1,6 +1,6 @@
 {
   "name": "cloudbridge-kit-osx",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A tool for creating and developing CloudBridge OSx apps.",
   "homepage": "http://www.totvs.com/",
   "keywords": [
@@ -22,16 +22,10 @@
   "license": "MIT",
   "devDependencies": {
     "totvstec-tools": "^1.0.1"
-  
   },
-  
- "scripts": {
-
+  "scripts": {
     "release": "totvstec release --npm-publish",
-
     "release:minor": "totvstec release minor --npm-publish",
-
     "release:major": "totvstec release major --npm-publish"
-
   }
 }
