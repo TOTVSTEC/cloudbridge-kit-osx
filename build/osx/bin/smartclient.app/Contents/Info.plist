@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>byyou.icns</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>LSApplicationCategoryType</key>	
+	<string>public.app-category.business</string>	
+	<key>CFBundleGetInfoString</key>
+	<string>Created by TOTVSTec</string>
+	<key>CFBundleSignature</key>
+	<string>smtc</string>
+	<key>CFBundleExecutable</key>
+	<string>smartclient</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.totvs.smartclient</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>(C) 2011 TOTVS S.A</string>
+	<key>CFBundleVersion</key>
+	<string>115</string>
+	<key>CFBundleShortVersionString</key>
+	<string>115</string>
+</dict>
+</plist>
