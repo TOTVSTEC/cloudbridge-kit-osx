@@ -4,7 +4,8 @@ var task = module.exports,
 	fs = null,
 	shelljs = null,
 	cloudbridge = null,
-	projectDir = null;
+	projectDir = null,
+        paths = null;
 
 task.run = function run(cli, targetPath, projectData) {
 	cloudbridge = cli;
@@ -12,6 +13,7 @@ task.run = function run(cli, targetPath, projectData) {
 	Q = cloudbridge.require('q');
 	fs = cloudbridge.require('fs');
 	shelljs = cloudbridge.require('shelljs');
+        paths = cloudbridge.cb_require('utils/paths');
 
 	return Q()
 		.then(copyDependencies)
@@ -25,8 +27,8 @@ function copyDependencies() {
 	shelljs.mkdir('-p', target);
 	shelljs.cp('-Rf', src, target);
 
-	var smartclient = path.join(projectDir, 'build', 'osx', 'bin', 'smartclient', 'smartclient');
-	var appserver = path.join(projectDir, 'build', 'osx', 'bin', 'appserver', 'appserver');
+        var smartclient = paths.get("SMARTCLIENT", projectDir);
+        var appserver =  paths.get("APPSERVER", projectDir);
 
 	shelljs.chmod('+x', smartclient);
 	shelljs.chmod('+x', appserver);
