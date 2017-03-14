@@ -26,17 +26,17 @@ function copyDependencies() {
 	shelljs.cp('-Rf', src, target);
 
 	var smartclient = path.join(projectDir, 'build', 'osx', 'bin', 'smartclient', 'smartclient');
-        var appserver = path.join(projectDir, 'build', 'osx', 'bin', 'appserver', 'appserver');
+	var appserver = path.join(projectDir, 'build', 'osx', 'bin', 'appserver', 'appserver');
 
-        shelljs.chmod("+x",smartclient);
-        shelljs.chmod("+x",appserver);
+	shelljs.chmod('+x', smartclient);
+	shelljs.chmod('+x', appserver);
 }
 
 function applyTemplate() {
 	var ini = path.join(projectDir, 'build', 'osx', 'bin', 'smartclient', 'smartclient.ini'),
 		project = require(path.join(projectDir, 'cloudbridge.json'));
 
-	var content = fs.readFileSync(ini, {encoding: 'utf8'});
+	var content = fs.readFileSync(ini, { encoding: 'utf8' });
 	content = content.replace(/LASTMAINPROG.+/igm, 'LASTMAINPROG=' + project.name + '.Cloud');
 	fs.writeFileSync(ini, content);
 }
