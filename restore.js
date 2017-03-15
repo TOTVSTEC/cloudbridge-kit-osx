@@ -35,7 +35,7 @@ function copyDependencies() {
 }
 
 function applyTemplate() {
-	var ini = path.join(projectDir, 'build', 'osx', 'bin', 'smartclient', 'smartclient.ini'),
+	var ini = path.join(projectDir, 'build', 'osx', 'bin', 'smartclient.app', 'Contents', 'MacOS', 'smartclient.ini'),
 		project = require(path.join(projectDir, 'cloudbridge.json'));
 
 	var content = fs.readFileSync(ini, { encoding: 'utf8' });
