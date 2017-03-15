@@ -1,6 +1,6 @@
 {
   "name": "cloudbridge-kit-osx",
-  "version": "0.0.5",
+  "version": "0.0.6-SNAPSHOT",
   "description": "A tool for creating and developing CloudBridge OS X apps.",
   "homepage": "http://www.totvs.com/",
   "keywords": [
